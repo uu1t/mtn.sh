@@ -6,8 +6,8 @@
 
 The following executables are installed in `$PATH`.
 
-- ffmpeg (`ffmpeg` and `ffprobe`)
-- imagemagick (`montage`)
+- FFmpeg (`ffmpeg` and `ffprobe`)
+- ImageMagick (`montage`)
 
 # Installation
 
