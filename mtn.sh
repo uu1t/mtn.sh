@@ -43,7 +43,7 @@ main() {
   for ((i=0; i<$n_thumbnails; i++)); do
     n=$(printf '%06d' $i)
     pos=$(($step * $i + $offset))
-    ffmpeg -ss $pos -i $input -vf scale=$each_width:-1 -frames:v 1 -loglevel error -y "$lockfile.t_$n.jpg"
+    ffmpeg -ss $pos -i "$input" -vf scale=$each_width:-1 -frames:v 1 -loglevel error -y "$lockfile.t_$n.jpg"
 
     label=$(hhmmss pos)
     convert "$lockfile.t_$n.jpg" -gravity SouthEast -font TrebuchetMSI -pointsize 16 \
